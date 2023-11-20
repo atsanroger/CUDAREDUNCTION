@@ -3,6 +3,7 @@
 ## Introduction
 CUDAReduction is a high-performance computing project focused on calculating the integral of the sine function using CUDA for GPU acceleration. 
 The project compares the results and performance of GPU-based calculations with a CPU version that utilizes both OpenMP and MPI for parallel processing.
+Currently the GPU code gives wrong result.
 
 ## Requirements
 - MPI
