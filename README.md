@@ -19,9 +19,10 @@ To compile the CPU version of the program, use the following command:
 mpic++ -fopenmp reductionCPU.cpp -o reductionCPU.o -lm
 ```
 To execute the compiled CPU program, use:
-'''
+
+```
 OMP_NUM_THREADS=4 mpirun -np 8 ./reductionCPU.o
-'''
+```
 
 ### GPU Version
 For the GPU version, the program should be compiled with nvcc using the architecture specification that matches your GPU. 
