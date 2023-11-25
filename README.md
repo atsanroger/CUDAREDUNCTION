@@ -24,6 +24,8 @@ To execute the compiled CPU program, use:
 OMP_NUM_THREADS=4 mpirun -np 8 ./reductionCPU.o
 ```
 
+Modify the number of thread and prcoessor according to your hardware/
+
 ### GPU Version
 For the GPU version, the program should be compiled with nvcc using the architecture specification that matches your GPU. 
 Replace sm_cc with the compute capability of your GPU.
