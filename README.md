@@ -33,3 +33,10 @@ Replace sm_cc with the compute capability of your GPU.
 ```
 nvcc -arch=sm_cc sinreduction.cu -o sinreduction
 ```
+
+## Current Status
+The CPU version gives correct answer with current precision. For GPU, the abnormal depedence to the input is happended.
+
+For my RTX3080(8G) in WSL2 subsystem(cuda 12.2), result is correct with first agrument is 65600 and second one has no dependence.
+
+Need more observation to it.
